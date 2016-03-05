@@ -1,0 +1,99 @@
+/* CSS for login.html */
+
+*{
+	font-family: 'Open Sans' !important;
+}
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	background-color:#F1F7FE;
+	font-size:1.4rem;
+}
+
+.login-form .btn{
+	box-shadow:0 2px 0 #1B4465;
+}
+.login-form input{
+	box-shadow:0 2px 0 #BBB;
+}
+
+.login-container{
+	padding-top:100px;
+	/*padding-bottom:100px;*/
+}
+@media(max-width:480px){
+	.login-container{
+		padding-top:15px;		
+	}
+}
+
+.login-panel{
+	background-color:#FFF;	
+	border:1px solid #DDD;
+	border-right:0;
+	border-left:0;
+	box-shadow:0 2px 0 #BBB;
+	margin:auto -15px;
+}
+@media(max-width:480px){	
+	.login-panel{
+		background-color:transparent;
+		border:0;
+		box-shadow:none;
+	}
+}
+
+.form-login{
+	max-width: 500px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.logo{
+	padding-bottom:15px;
+}
+
+.login-stmt{
+	padding-bottom:20px;
+}
+
+.login-btn{
+	font-size:1.1rem;
+	font-weight:700;
+	text-transform:uppercase;
+	min-width:75px;
+}
+
+.forgot-pwd{
+	padding-top:6px;
+}
+.forgot-pwd a{
+	font-size:1.1rem;
+}
+
+.legal{
+	border-top: 1px solid #ddd;
+	list-style:none;
+	padding:15px 0;
+  margin-top: 15px;
+}
+
+.legal li{
+	float:left;
+	padding-right:15px;
+}
+.legal li a{	
+	font-size:1.1rem;
+	color:#AAA;
+}
+@media(max-width:480px){
+	.legal li{
+		padding-right:10px;
+	}
+	.legal li a{
+		font-size:0.9rem;		
+	}
+}
