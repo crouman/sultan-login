@@ -7,9 +7,11 @@
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />	
 		<!-- open sans -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700' rel='stylesheet' type='text/css' />	
+		<!--font awesome-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		
 		<!--local style-->
-		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		<!-- apple device -->
 		<link rel="apple-touch-icon" href="images/ai-logo_04.png">
@@ -20,41 +22,84 @@
 	</head>
 	
 	<body onload="document.loginForm.login.focus();">
-		<div class="container-fluid login-container">
-			<div class="login-panel">
-				<div class="form-login">
-					<div>
-						<img src="images/tela-logo.png" alt="logo" class="logo">
-						<p class="login-stmt">Online access to your invoices will allow you to view statements, create reports, and view graphical charts analysing your invoice information.</p>
-						
-						
-						<form name="loginForm" autocomplete="off" class="login-form">
-							<div class="form-group">
-								<input id="login" type="TEXT" name="login" placeholder="Username" class="form-control" autocomplete="off">
-							</div>
-							<div class="form-group">
-								<input id="Password1" type="PASSWORD" name="pwd" placeholder="Password" class="form-control" autocomplete="off" >
-							</div>						
-							<!--<div class="row">
-								<div class="col-sm-6">-->
-									<button class="btn btn-sm btn-primary login-btn" role="button">Login</button>
-							<!--	</div>
-								<div class="col-sm-6 forgot-pwd">-->
-								<div class="forgot-pwd pull-right">
-									<a class="" href="https://qatelauw27/cv/scripts/DAC0/eng/forgottenPassword.asp?dbg=0">Forgot Your Login or Password?</a>
-								</div>
-							</div>
-						</form>
-						
-						<ul class="legal">
-							<li><a href="#">Terms of Use</a></li>
-							<li><a href="#">Security Statement</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Legal Notices</a></li>							
-						</ul>
-					</div>
-				</div>			
+		<div class="container-fluid">
+
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingOne">
+			      <h4 class="panel-title">
+			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Call Usage <span class="caret"></span>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">		      
+		        <ul class="list-group detail-list-group">
+						  <li class="list-group-item">						  	
+						  	<a href="">Report Name ABC</a>
+						  	<span class="btn-group pull-right" role="group" aria-label="...">
+								  <button type="button" class="btn btn-default" title="Edit Report Template"><i class="fa fa-lg fa-pencil"></i></button>
+								  <button type="button" class="btn btn-default" title="Order Report"><i class="fa fa-lg fa-shopping-cart"></i></button>
+								  <button type="button" class="btn btn-default delete" title="Delete Report Template"><i class="fa fa-lg fa-trash"></i></button>
+								</span>
+						 	</li>
+						  <li class="list-group-item">						  	
+						  	<a href="">Report Name ABC</a>
+						  	<span class="btn-group pull-right" role="group" aria-label="...">
+								  <button type="button" class="btn btn-default"><i class="fa fa-lg fa-pencil"></i></button>
+								  <button type="button" class="btn btn-default"><i class="fa fa-lg fa-shopping-cart"></i></button>
+								  <button type="button" class="btn btn-default delete"><i class="fa fa-lg fa-trash"></i></button>
+								</span>
+						 	</li>
+						 	<li class="list-group-item">						  	
+						  	<a href="">Report Name ABC</a>
+						  	<span class="btn-group pull-right" role="group" aria-label="...">
+								  <button type="button" class="btn btn-default"><i class="fa fa-lg fa-pencil"></i></button>
+								  <button type="button" class="btn btn-default"><i class="fa fa-lg fa-shopping-cart"></i></button>
+								  <button type="button" class="btn btn-default delete"><i class="fa fa-lg fa-trash"></i></button>
+								</span>
+						 	</li>
+						 	<li class="list-group-item">						  	
+						  	<a href="">Report Name ABC</a>
+						  	<span class="btn-group pull-right" role="group" aria-label="...">
+								  <button type="button" class="btn btn-default"><i class="fa fa-lg fa-pencil"></i></button>
+								  <button type="button" class="btn btn-default"><i class="fa fa-lg fa-shopping-cart"></i></button>
+								  <button type="button" class="btn btn-default delete"><i class="fa fa-lg fa-trash"></i></button>
+								</span>
+						 	</li>
+						</ul>			      
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingTwo">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Circuit <span class="caret"></span>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingThree">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Equipment <span class="caret"></span>
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
 			</div>
+			
 		</div><!-- /.login-panel-->	
 		
 		<!-- bootstrap + jQuery -->

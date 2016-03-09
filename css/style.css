@@ -10,8 +10,36 @@ html{
 
 body{
 	background-color:#F1F7FE;
-	font-size:1.4rem;
+	color: #444 !important;
+	font:1.4rem "Open Sans";
+	margin-top: 15px;
 }
+
+.detail-list-group li:hover{
+	background-color: aliceblue;
+	cursor: pointer;
+}
+
+.detail-list-group .btn-group{
+	margin-right: -15px
+}
+.detail-list-group .btn-group button{
+	border-top: 0;
+	border-bottom: 0;
+	border-radius: 0;
+	margin: -10px 0;
+	line-height: 2;
+}
+.detail-list-group .btn-group button:last-child{
+	border-right: 0;
+}
+.detail-list-group .btn-group button i.fa{
+	line-height: 1.5;
+}
+.detail-list-group .btn-group button.delete i.fa{
+	color: #C13333;
+}
+
 
 .login-form .btn{
 	box-shadow:0 2px 0 #1B4465;
